@@ -11,6 +11,7 @@ describe('Chain helpers', function () {
         chai_1.expect(chain_1.getChainName(src_1.ChainId.Rinkeby)).to.eq('Rinkeby');
         chai_1.expect(chain_1.getChainName(src_1.ChainId.Goerli)).to.eq('Goerli');
         chai_1.expect(chain_1.getChainName(src_1.ChainId.BSC)).to.eq('BSC');
+        chai_1.expect(chain_1.getChainName(src_1.ChainId.Mumbai)).to.eq('Mumbai');
         chai_1.expect(chain_1.getChainName(src_1.ChainId.xDai)).to.eq('xDai');
     });
     it('isTestChain', function () {
@@ -21,6 +22,7 @@ describe('Chain helpers', function () {
         chai_1.expect(chain_1.isTestChain(src_1.ChainId.Goerli)).to.be["true"];
         chai_1.expect(chain_1.isTestChain(src_1.ChainId.BSC)).to.be["false"];
         chai_1.expect(chain_1.isTestChain(src_1.ChainId.xDai)).to.be["false"];
+        chai_1.expect(chain_1.isTestChain(src_1.ChainId.Mumbai)).to.be["true"];
     });
     it('getExplorerAddressLink', function () {
         var address = '0xC7095A52C403ee3625Ce8B9ae8e2e46083b81987';
@@ -31,6 +33,7 @@ describe('Chain helpers', function () {
         chai_1.expect(chain_1.getExplorerAddressLink(address, src_1.ChainId.Goerli)).to.eq('https://goerli.etherscan.io/address/0xC7095A52C403ee3625Ce8B9ae8e2e46083b81987');
         chai_1.expect(chain_1.getExplorerAddressLink(address, src_1.ChainId.BSC)).to.eq('https://bscscan.com/address/0xC7095A52C403ee3625Ce8B9ae8e2e46083b81987');
         chai_1.expect(chain_1.getExplorerAddressLink(address, src_1.ChainId.xDai)).to.eq('https://blockscout.com/poa/xdai/address/0xC7095A52C403ee3625Ce8B9ae8e2e46083b81987/transactions');
+        chai_1.expect(chain_1.getExplorerAddressLink(address, src_1.ChainId.Mumbai)).to.eq('https://explorer-mumbai.maticvigil.com/address/0xC7095A52C403ee3625Ce8B9ae8e2e46083b81987/transactions');
     });
     it('getExplorerTransactionLink', function () {
         var tx = '0x5d53558791c9346d644d077354420f9a93600acf54eb6a279f12b43025392c3a';
@@ -41,6 +44,7 @@ describe('Chain helpers', function () {
         chai_1.expect(chain_1.getExplorerTransactionLink(tx, src_1.ChainId.Goerli)).to.eq('https://goerli.etherscan.io/tx/0x5d53558791c9346d644d077354420f9a93600acf54eb6a279f12b43025392c3a');
         chai_1.expect(chain_1.getExplorerTransactionLink(tx, src_1.ChainId.BSC)).to.eq('https://bscscan.com/tx/0x5d53558791c9346d644d077354420f9a93600acf54eb6a279f12b43025392c3a');
         chai_1.expect(chain_1.getExplorerTransactionLink(tx, src_1.ChainId.xDai)).to.eq('https://blockscout.com/poa/xdai/tx/0x5d53558791c9346d644d077354420f9a93600acf54eb6a279f12b43025392c3a/internal-transactions');
+        chai_1.expect(chain_1.getExplorerTransactionLink(tx, src_1.ChainId.Mumbai)).to.eq('https://explorer-mumbai.maticvigil.com/tx/0x5d53558791c9346d644d077354420f9a93600acf54eb6a279f12b43025392c3a/internal-transactions');
     });
 });
 //# sourceMappingURL=chain.test.js.map

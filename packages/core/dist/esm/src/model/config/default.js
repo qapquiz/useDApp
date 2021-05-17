@@ -9,6 +9,7 @@ export const DEFAULT_CONFIG = {
         ChainId.Ropsten,
         ChainId.BSC,
         ChainId.xDai,
+        ChainId.Mumbai
     ],
     notifications: {
         checkInterval: 500,

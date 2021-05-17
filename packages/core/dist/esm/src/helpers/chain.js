@@ -22,6 +22,8 @@ export function getExplorerAddressLink(address, chainId) {
             return `https://bscscan.com/address/${address}`;
         case ChainId.xDai:
             return `https://blockscout.com/poa/xdai/address/${address}/transactions`;
+        case ChainId.Mumbai:
+            return `https://explorer-mumbai.maticvigil.com/address/${address}/transactions`;
     }
 }
 export function getExplorerTransactionLink(transactionHash, chainId) {
@@ -36,6 +38,8 @@ export function getExplorerTransactionLink(transactionHash, chainId) {
             return `https://bscscan.com/tx/${transactionHash}`;
         case ChainId.xDai:
             return `https://blockscout.com/poa/xdai/tx/${transactionHash}/internal-transactions`;
+        case ChainId.Mumbai:
+            return `https://explorer-mumbai.maticvigil.com/tx/${transactionHash}/internal-transactions`;
     }
 }
 export function getChainName(chainId) {

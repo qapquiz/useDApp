@@ -25,6 +25,8 @@ function getExplorerAddressLink(address, chainId) {
             return "https://bscscan.com/address/" + address;
         case constants_1.ChainId.xDai:
             return "https://blockscout.com/poa/xdai/address/" + address + "/transactions";
+        case constants_1.ChainId.Mumbai:
+            return "https://explorer-mumbai.maticvigil.com/address/" + address + "/transactions";
     }
 }
 exports.getExplorerAddressLink = getExplorerAddressLink;
@@ -40,6 +42,8 @@ function getExplorerTransactionLink(transactionHash, chainId) {
             return "https://bscscan.com/tx/" + transactionHash;
         case constants_1.ChainId.xDai:
             return "https://blockscout.com/poa/xdai/tx/" + transactionHash + "/internal-transactions";
+        case constants_1.ChainId.Mumbai:
+            return "https://explorer-mumbai.maticvigil.com/tx/" + transactionHash + "/internal-transactions";
     }
 }
 exports.getExplorerTransactionLink = getExplorerTransactionLink;

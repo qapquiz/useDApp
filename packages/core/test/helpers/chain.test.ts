@@ -10,6 +10,7 @@ describe('Chain helpers', () => {
     expect(getChainName(ChainId.Rinkeby)).to.eq('Rinkeby')
     expect(getChainName(ChainId.Goerli)).to.eq('Goerli')
     expect(getChainName(ChainId.BSC)).to.eq('BSC')
+    expect(getChainName(ChainId.Mumbai)).to.eq('Mumbai')
     expect(getChainName(ChainId.xDai)).to.eq('xDai')
   })
 
@@ -21,6 +22,7 @@ describe('Chain helpers', () => {
     expect(isTestChain(ChainId.Goerli)).to.be.true
     expect(isTestChain(ChainId.BSC)).to.be.false
     expect(isTestChain(ChainId.xDai)).to.be.false
+    expect(isTestChain(ChainId.Mumbai)).to.be.true
   })
 
   it('getExplorerAddressLink', () => {
@@ -46,6 +48,9 @@ describe('Chain helpers', () => {
     expect(getExplorerAddressLink(address, ChainId.xDai)).to.eq(
       'https://blockscout.com/poa/xdai/address/0xC7095A52C403ee3625Ce8B9ae8e2e46083b81987/transactions'
     )
+    expect(getExplorerAddressLink(address, ChainId.Mumbai)).to.eq(
+      'https://explorer-mumbai.maticvigil.com/address/0xC7095A52C403ee3625Ce8B9ae8e2e46083b81987/transactions'
+    )
   })
 
   it('getExplorerTransactionLink', () => {
@@ -70,6 +75,9 @@ describe('Chain helpers', () => {
     )
     expect(getExplorerTransactionLink(tx, ChainId.xDai)).to.eq(
       'https://blockscout.com/poa/xdai/tx/0x5d53558791c9346d644d077354420f9a93600acf54eb6a279f12b43025392c3a/internal-transactions'
+    )
+    expect(getExplorerTransactionLink(tx, ChainId.Mumbai)).to.eq(
+      'https://explorer-mumbai.maticvigil.com/tx/0x5d53558791c9346d644d077354420f9a93600acf54eb6a279f12b43025392c3a/internal-transactions'
     )
   })
 })

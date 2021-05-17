@@ -12,6 +12,7 @@ exports.DEFAULT_CONFIG = {
         constants_1.ChainId.Ropsten,
         constants_1.ChainId.BSC,
         constants_1.ChainId.xDai,
+        constants_1.ChainId.Mumbai
     ],
     notifications: {
         checkInterval: 500,
