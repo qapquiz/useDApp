@@ -7,7 +7,8 @@ export declare enum ChainId {
     BSC = 56,
     xDai = 100,
     Localhost = 1337,
-    Hardhat = 31337
+    Hardhat = 31337,
+    Mumbai = 80001
 }
 export declare const CHAIN_NAMES: {
     1: string;
@@ -19,6 +20,7 @@ export declare const CHAIN_NAMES: {
     100: string;
     1337: string;
     31337: string;
+    80001: string;
 };
 export declare const MULTICALL_ADDRESSES: {
     1: string;
@@ -28,6 +30,7 @@ export declare const MULTICALL_ADDRESSES: {
     42: string;
     56: string;
     100: string;
+    80001: string;
 };
 export declare const TEST_CHAINS: ChainId[];
 //# sourceMappingURL=chainId.d.ts.map

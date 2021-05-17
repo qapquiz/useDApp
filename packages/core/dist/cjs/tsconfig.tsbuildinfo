@@ -249,8 +249,8 @@
         "affectsGlobalScope": false
       },
       "../../src/constants/chainid.ts": {
-        "version": "ae8f77c4ea252186a10b06b287337ec93a3063cf6fe71a5d0631d5de56e7c9d0",
-        "signature": "58e738bae3fa1a8f174c10c22103cca5907cb728f7802ec66be279d079201155",
+        "version": "19c75850384d5cfc04d59fe459487d7e69e3c6eecce73e9810d55a8b294bd0db",
+        "signature": "051095c9e3f41e2c4033298f5a2a99dae9672a6604dffa3f7a258d9c96c608e3",
         "affectsGlobalScope": false
       },
       "../../src/model/formatting.ts": {

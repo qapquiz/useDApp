@@ -984,8 +984,8 @@
         "affectsGlobalScope": false
       },
       "../../core/dist/esm/src/constants/chainid.d.ts": {
-        "version": "58e738bae3fa1a8f174c10c22103cca5907cb728f7802ec66be279d079201155",
-        "signature": "58e738bae3fa1a8f174c10c22103cca5907cb728f7802ec66be279d079201155",
+        "version": "051095c9e3f41e2c4033298f5a2a99dae9672a6604dffa3f7a258d9c96c608e3",
+        "signature": "051095c9e3f41e2c4033298f5a2a99dae9672a6604dffa3f7a258d9c96c608e3",
         "affectsGlobalScope": false
       },
       "../../core/dist/esm/src/model/formatting.d.ts": {

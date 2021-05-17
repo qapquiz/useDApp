@@ -8,6 +8,7 @@ export enum ChainId {
   xDai = 100,
   Localhost = 1337,
   Hardhat = 31337,
+  Mumbai = 80001,
 }
 
 export const CHAIN_NAMES = {
@@ -20,6 +21,7 @@ export const CHAIN_NAMES = {
   [ChainId.xDai]: 'xDai',
   [ChainId.Localhost]: 'Localhost',
   [ChainId.Hardhat]: 'Hardhat',
+  [ChainId.Mumbai]: 'Mumbai'
 }
 
 export const MULTICALL_ADDRESSES = {
@@ -30,6 +32,7 @@ export const MULTICALL_ADDRESSES = {
   [ChainId.Kovan]: '0x2cc8688c5f75e365aaeeb4ea8d6a480405a48d2a',
   [ChainId.BSC]: '0x41263cba59eb80dc200f3e2544eda4ed6a90e76c',
   [ChainId.xDai]: '0xb5b692a88bdfc81ca69dcb1d924f59f0413a602a',
+  [ChainId.Mumbai]: '0x1Ea8a7b63cDE8d1309a51B9cd2b2f9390Cdb84c2',
 }
 
 export const TEST_CHAINS = [
@@ -39,4 +42,5 @@ export const TEST_CHAINS = [
   ChainId.Goerli,
   ChainId.Localhost,
   ChainId.Hardhat,
+  ChainId.Mumbai,
 ]

@@ -13,6 +13,7 @@ var ChainId;
     ChainId[ChainId["xDai"] = 100] = "xDai";
     ChainId[ChainId["Localhost"] = 1337] = "Localhost";
     ChainId[ChainId["Hardhat"] = 31337] = "Hardhat";
+    ChainId[ChainId["Mumbai"] = 80001] = "Mumbai";
 })(ChainId = exports.ChainId || (exports.ChainId = {}));
 exports.CHAIN_NAMES = (_a = {},
     _a[ChainId.Mainnet] = 'Mainnet',
@@ -24,6 +25,7 @@ exports.CHAIN_NAMES = (_a = {},
     _a[ChainId.xDai] = 'xDai',
     _a[ChainId.Localhost] = 'Localhost',
     _a[ChainId.Hardhat] = 'Hardhat',
+    _a[ChainId.Mumbai] = 'Mumbai',
     _a);
 exports.MULTICALL_ADDRESSES = (_b = {},
     _b[ChainId.Mainnet] = '0xeefba1e63905ef1d7acba5a8513c70307c1ce441',
@@ -33,6 +35,7 @@ exports.MULTICALL_ADDRESSES = (_b = {},
     _b[ChainId.Kovan] = '0x2cc8688c5f75e365aaeeb4ea8d6a480405a48d2a',
     _b[ChainId.BSC] = '0x41263cba59eb80dc200f3e2544eda4ed6a90e76c',
     _b[ChainId.xDai] = '0xb5b692a88bdfc81ca69dcb1d924f59f0413a602a',
+    _b[ChainId.Mumbai] = '0x1Ea8a7b63cDE8d1309a51B9cd2b2f9390Cdb84c2',
     _b);
 exports.TEST_CHAINS = [
     ChainId.Ropsten,
@@ -41,5 +44,6 @@ exports.TEST_CHAINS = [
     ChainId.Goerli,
     ChainId.Localhost,
     ChainId.Hardhat,
+    ChainId.Mumbai,
 ];
 //# sourceMappingURL=chainId.js.map
